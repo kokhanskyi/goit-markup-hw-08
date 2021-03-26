@@ -1,0 +1,25 @@
+/* Постоянные клиенты */
+
+.regular-client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.regular-client-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--regular-client-link-primary-color);
+  border-radius: 4px;
+  fill: var(--regular-client-link-primary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+/* ================================================ */

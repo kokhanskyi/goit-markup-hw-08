@@ -1,0 +1,42 @@
+/* Секция  Особенности */
+
+.feature {
+  p {
+    font-size: 14px;
+    line-height: 1.71;
+    padding-top: 10px;
+    font-family: Roboto;
+  }
+  h3 {
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+.feature-logo {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-background-color);
+  margin-bottom: 30px;
+
+  &-icon {
+    width: 70px;
+    height: 70px;
+    padding: auto;
+    margin: auto;
+  }
+}
+.container .feature-list {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  &-item {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}

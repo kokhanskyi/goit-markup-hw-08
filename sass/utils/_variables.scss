@@ -1,0 +1,27 @@
+/* Основной цвет текста #757575 */
+/* Вторичный цвет текста #212121 */
+/* Синий цвет #2196F3 */
+/* Белый цвет #FFFFFF */
+/* Цвет ссылок футера rgba(255, 255, 255, 0.6) */
+/* Вторичный цвет фона #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --primary-section-text-color: #ffffff;
+  --primary-section-background-color: #2f303a;
+  --footer-section-background-color: #2f303a;
+  --footer-social-background-color: rgba(255, 255, 255, 0.1);
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-background-color: #ffffff;
+  --second-background-color: #f5f4fa;
+  --logo-header-color: #000000;
+  --logo-footer-color: #ffffff;
+  --communication-footer-color: rgb(255, 255, 255, 0.6);
+  --color-text-btn: #ffffff;
+  --btn-hover-color: #188ce8;
+  --social-primary-color: #afb1b8;
+  --regular-client-link-primary-color: #afb1b8;
+  --social-second-color: #ffffff;
+  --portfoleo-project-list-text-color: #ffffff;
+}

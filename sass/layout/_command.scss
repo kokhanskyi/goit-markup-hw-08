@@ -1,0 +1,76 @@
+/* Секция  Наша команда */
+.command {
+  background-color: var(--second-background-color);
+
+  h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &-wapper {
+    display: block;
+    padding-top: 30px;
+    border-bottom: 2px solid #a5a5a9;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: var(--primary-background-color);
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+.container .command-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  &-item {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: 0px 4px 4px 0px #9e9da1;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--social-primary-color);
+  }
+
+  &-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+    &:hover .social-list-icon,
+    &:focus .social-list-icon {
+      fill: var(--social-second-color);
+    }
+  }
+}

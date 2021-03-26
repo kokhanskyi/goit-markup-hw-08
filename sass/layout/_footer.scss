@@ -1,0 +1,150 @@
+/* ===================ПОДВАЛ САЙТА============================= */
+
+/* Подвал сайта */
+footer {
+  color: var(--logo-footer-color);
+  background-color: var(--footer-section-background-color);
+  display: flex;
+  justify-content: flex-start;
+}
+footer .container {
+  display: flex;
+  padding: 60px 0;
+}
+
+/* Логотип в подвале */
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--logo-footer-color);
+  -bottom: 20px;
+
+  span {
+    color: var(--accent-color);
+  }
+}
+.address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  padding-top: 20px;
+}
+/* Коммуникация (подвал) */
+
+.communication-footer .link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--communication-footer-color);
+  text-decoration: none;
+  padding-top: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color); /* Синий цвет #2196F3 */
+  }
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+  margin-top: 12px;
+  p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-section-text-color);
+    margin-bottom: 20px;
+  }
+}
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-item {
+    width: 44px;
+    height: 44px;
+    background-color: var(--footer-social-background-color);
+    border-radius: 50%;
+  }
+
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--logo-footer-color);
+  }
+}
+.footer-social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--social-second-color);
+    background-color: var(--accent-color);
+  }
+}
+
+/* =====footer-subscription====== */
+.footer-subscription-box {
+  display: block;
+  margin-top: 12px;
+  margin-left: 92px;
+}
+.footer-subscription-box span {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-subscription-btn {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-section-text-color);
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  border: none;
+  cursor: pointer;
+}
+.footer-subscription-box p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--primary-section-text-color);
+}
+.footer-subscription-email {
+  width: 358px;
+  height: 50px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: none;
+  color: var(--primary-section-text-color);
+}
+
+/* =========== END FOOTER ===========*/

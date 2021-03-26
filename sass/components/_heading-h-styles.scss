@@ -1,0 +1,15 @@
+/* Задаем стиль для h2 */
+.container h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* Общее для секций (шрифты h2 h3) */
+.section-title {
+  color: var(--title-text-color); /* Вторичный цвет текста #212121 */
+}
+.section-list {
+  color: var(--title-text-color); /* Вторичный цвет текста #212121 */
+}

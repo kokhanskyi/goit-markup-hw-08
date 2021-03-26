@@ -1,0 +1,13 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/container';
+/* ===========COMPONENTS===========*/
+@import './components/heading-h-styles';
+@import './components/section';
+/* ===========END=COMPONENTS===========*/
+@import './layout/header';
+@import './layout/portfoleo-filters';
+@import './layout/portfoleo-project';
+@import './layout/footer';
