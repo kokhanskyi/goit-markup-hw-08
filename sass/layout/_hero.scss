@@ -2,26 +2,22 @@
 /* Основная секця */
 .hero {
   background-color: var(--primary-section-background-color);
-  padding: 200px 0;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/bg.jpg);
+  padding: 118px 0;
   background-repeat: no-repeat;
   background-size: cover;
 
   &-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-section-text-color);
-    max-width: 700px;
+    padding: 0 60px;
     margin: 0 auto;
     margin-bottom: 30px;
+    max-width: 480px;
   }
   &-btn {
     font-weight: bold;
@@ -31,11 +27,12 @@
     letter-spacing: 0.06em;
     color: var(--color-text-btn);
     background-color: var(--accent-color);
+    width: 200px;
+    height: 50px;
     margin: 0 auto;
     display: block;
     border: 0px;
     border-radius: 5px;
-    padding: 10px 32px;
 
     &-btn:hover,
     &-btn:focus {
@@ -44,5 +41,70 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
+  @media screen and (min-width: 280px) and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bg-m@1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (min-width: 280px) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (min-width: 280px) and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bg-m@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-title {
+      padding: 0 204px;
+      max-width: 768px;
+    }
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bg-t@1x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bg-t@2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 215px 0;
+
+    &-title {
+      font-size: 44px;
+      line-height: 1.36;
+      padding: 0 204px;
+      max-width: 1200px;
+    }
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bg-d@1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bg-d@2x.jpg);
   }
 }

@@ -1,32 +1,48 @@
 /* Секция  Чем мы занимаемся */
-.container .business-list {
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
-  padding-bottom: 50px;
-
-  &-item {
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-    position: relative;
-  }
+.business {
+  display: none;
 }
+@media screen and (min-width: 1200px) {
+  .business {
+    display: contents;
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding-bottom: 50px;
+    }
+  }
+  .container .business-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding-bottom: 50px;
 
-.business-list-item-text {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-section-text-color);
-  background: rgba(47, 48, 58, 0.8);
-  padding: 26px 0;
+    &-item {
+      width: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+      position: relative;
+    }
+  }
 
-  &-box {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  .business-list-item-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-section-text-color);
+    background: rgba(47, 48, 58, 0.8);
+    padding: 26px 0;
+
+    &-box {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
   }
 }
