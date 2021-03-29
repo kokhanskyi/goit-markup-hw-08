@@ -186,19 +186,19 @@ body {
 
 @media screen and (min-width: 280px) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-m@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/bg-m@1x.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 280px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 280px) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-m@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/bg-m@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-t@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/bg-t@1x.jpg);
   }
   .hero-title {
     padding: 0 204px;
@@ -208,14 +208,14 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-t@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/bg-t@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 215px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-d@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/bg-d@1x.jpg);
   }
   .hero-title {
     font-size: 44px;
@@ -227,7 +227,7 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-d@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././images/bg-d@2x.jpg);
   }
 }
 
@@ -459,4 +459,65 @@ body {
 .social-list-link:focus .social-list-icon {
   fill: var(--social-second-color);
 }
+
+/* Постоянные клиенты */
+.regular-client h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 30px;
+}
+
+.regular-client-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.regular-client-item {
+  padding-bottom: 30px;
+}
+
+.regular-client-link {
+  display: flex;
+  width: 210px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--regular-client-link-primary-color);
+  border-radius: 4px;
+  fill: var(--regular-client-link-primary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-client-link:hover, .regular-client-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 450px) {
+  .regular-client-list {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .regular-client-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-client-link {
+    width: 170px;
+  }
+  .regular-client-item {
+    padding-bottom: 0;
+  }
+}
+
+/* ================================================ */
 /*# sourceMappingURL=main.css.map */
