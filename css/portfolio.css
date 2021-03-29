@@ -585,6 +585,12 @@ footer .container {
   .footer-address {
     padding-left: 0;
   }
+  .address {
+    padding-bottom: 0;
+  }
+  .footer-social {
+    margin-bottom: 0;
+  }
 }
 
 /* =========== END FOOTER ===========*/

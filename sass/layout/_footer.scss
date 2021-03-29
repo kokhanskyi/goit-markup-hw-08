@@ -192,9 +192,7 @@ footer .container {
     margin: 0;
     margin-left: 12px;
   }
-  // .footer-subscription {
-  //   width: 570px;
-  // }
+
   .footer-subscription-box {
     width: 570px;
     p {
@@ -203,6 +201,12 @@ footer .container {
   }
   .footer-address {
     padding-left: 0;
+  }
+  .address {
+    padding-bottom: 0;
+  }
+  .footer-social {
+    margin-bottom: 0;
   }
 }
 

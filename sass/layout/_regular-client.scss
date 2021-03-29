@@ -18,6 +18,9 @@
 .regular-client-item {
   padding-bottom: 30px;
 }
+.regular-client-item:nth-last-child(-n + 1) {
+  padding: 0;
+}
 .regular-client-link {
   display: flex;
   width: 210px;
@@ -36,8 +39,16 @@
     border-color: var(--accent-color);
   }
 }
+@media screen and (min-width: 480px) {
+  .regular-client-item:nth-last-child(-n + 2) {
+    padding: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
+  .regular-client-item:nth-last-child(-n + 3) {
+    padding: 0;
+  }
   .regular-client-link {
     width: 226px;
   }
