@@ -13,7 +13,7 @@
 .regular-client-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 .regular-client-item {
   padding-bottom: 30px;
@@ -34,11 +34,6 @@
   &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
-  }
-}
-@media screen and (min-width: 450px) {
-  .regular-client-list {
-    justify-content: space-between;
   }
 }
 
