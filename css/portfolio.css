@@ -139,128 +139,319 @@ body {
 
 /* ===========END=COMPONENTS===========*/
 /* =======================ШАПКА САЙТА========================= */
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* Логотип в шапке */
 .logo-header {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--logo-header-color);
   /* Черный цвет логотипа #000000 */
   text-decoration: none;
-  margin-right: 93px;
+  padding: 16px 0;
 }
 
 .logo-header span {
   color: var(--accent-color);
 }
 
-/* Шапка сайта */
-.header {
-  border-bottom: 1px solid #ececec;
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+  .site-nav .current {
+    display: none;
+  }
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .communication-header {
+    display: none;
+  }
+  .mobile-open-btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-color: transparent;
+    width: 40px;
+    height: 40px;
+  }
+  .mobile-open-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-open-icon:hover, .mobile-open-icon:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+  .mobile-menu-close-btn {
+    padding: 0;
+    border: 0;
+    border-color: transparent;
+  }
+  .mobile-menu-close-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu-close-icon:hover, .mobile-menu-close-icon:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+  .mobile-menu {
+    position: fixed;
+    width: 100vw;
+    max-width: 480px;
+    height: 100vh;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-background-color);
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    padding: 48px 82px 48px 40px;
+    transition: all 250ms linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: all 250ms linear;
+  }
+  .mobile-menu-item {
+    margin-bottom: 32px;
+  }
+  .mobile-menu-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu-link:hover, .mobile-menu-link:focus {
+    color: var(--accent-color);
+    /* Синий цвет #2196F3 */
+  }
+  .current {
+    color: var(--accent-color);
+  }
+  .mobile-communication-list {
+    margin-top: 300px;
+  }
+  .mobile-communication-item {
+    margin-bottom: 32px;
+  }
+  .mobile-communication-link-tell {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  .mobile-communication-link-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+  }
+  .mobile-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mobile-social-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .mobile-social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-decoration: none;
+    padding-right: 10px;
+  }
 }
 
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--header-background-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+@media screen and (min-width: 768px) {
+  .mobile-open-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  header {
+    border-bottom: 1px solid #ececec;
+  }
+  .logo-header {
+    padding: 26px 0;
+    margin-right: 88px;
+  }
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  .page-header nav {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    align-items: center;
+    width: 294px;
+    height: 65px;
+  }
+  .site-nav .link {
+    display: inline-block;
+    margin-right: 50px;
+    color: var(--title-text-color);
+    /* Вторичный цвет текста #212121 */
+    text-decoration: none;
+    position: relative;
+    padding: 25px 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav .link:hover, .site-nav .link:focus {
+    color: var(--accent-color);
+    /* Синий цвет #2196F3 */
+  }
+  /* Активная страница */
+  .site-nav .current {
+    color: var(--accent-color);
+  }
+  .site-nav .current::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    display: block;
+    position: absolute;
+    top: calc(100% + 3px);
+    right: 0;
+  }
+  /* Коммуникация (шапка) */
+  .communication-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .communication-header li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .communication-header-icon-envelope, .communication-header-icon-smartphone {
+    margin-right: 8px;
+  }
+  .communication-header .link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: currentColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .communication-header-icon-envelope {
+    width: 14px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-color: transparent;
+  }
+  .communication-header-icon-smartphone {
+    width: 10px;
+    height: 14px;
+    padding: 0;
+    border: none;
+    border-color: transparent;
+  }
+  .communication-header-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .communication-header-container .link {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .communication-header-container .link:hover, .communication-header-container .link:focus {
+    color: var(--accent-color);
+    /* Синий цвет #2196F3 */
+  }
+  .link svg {
+    fill: var(--regular-client-link-primary-color);
+  }
+  .link:hover svg {
+    fill: var(--accent-color);
+  }
 }
 
-.page-header nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav .link {
-  display: inline-block;
-  margin-right: 50px;
-  color: var(--title-text-color);
-  /* Вторичный цвет текста #212121 */
-  text-decoration: none;
-  position: relative;
-  padding: 25px 0;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .link:hover, .site-nav .link:focus {
-  color: var(--accent-color);
-  /* Синий цвет #2196F3 */
-}
-
-/* Активная страница */
-.site-nav .current {
-  color: var(--accent-color);
-}
-
-.site-nav .current::after {
-  content: '';
-  height: 4px;
-  width: 100%;
-  background-color: var(--accent-color);
-  display: block;
-  position: absolute;
-  top: calc(100% - 4px);
-  right: 0;
-}
-
-/* Коммуникация (шапка) */
-.communication-header {
-  display: flex;
-  align-items: center;
-}
-
-.communication-header li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.communication-header-icon {
-  margin: 10px;
-}
-
-.communication-header .link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: currentColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.communication-header-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.communication-header-container .link {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.communication-header-container .link:hover, .communication-header-container .link:focus {
-  color: var(--accent-color);
-  /* Синий цвет #2196F3 */
-}
-
-.link svg {
-  fill: var(--regular-client-link-primary-color);
-}
-
-.link:hover svg {
-  fill: var(--accent-color);
+@media screen and (min-width: 1200px) {
+  .logo-header {
+    font-size: 26px;
+    line-height: 1.19;
+    padding: 25px 0;
+    margin-right: 94px;
+  }
+  .communication-header {
+    flex-direction: row;
+  }
+  .communication-header li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .communication-header-icon-envelope, .communication-header-icon-smartphone {
+    margin-right: 10px;
+  }
+  .communication-header .link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .communication-header-icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .communication-header-icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 /* ================================================ */
@@ -394,8 +585,8 @@ footer .container {
 /* Логотип в подвале */
 .logo-footer {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--logo-footer-color);
@@ -568,6 +759,9 @@ footer .container {
 }
 
 @media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+  }
   .footer-form {
     flex-direction: row;
     align-items: center;
