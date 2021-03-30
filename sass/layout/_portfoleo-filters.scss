@@ -1,22 +1,26 @@
 /* ===================ПОРТФОЛИО============================= */
 /* Страница Портфолио */
-.portfoleo {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 /* Секция  Фильтр проектов */
+
 .filters {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
 }
+
 .portfoleo-filters-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 
   &-item {
-    margin-left: 8px;
+    max-width: 362px;
+
+    margin-right: 8px;
+    margin-bottom: 15px;
 
     .portfoleo-button {
       border: none;
@@ -24,6 +28,8 @@
       background-color: var(second-background-colorolor);
       border-radius: 4px;
       padding: 6px 22px;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
       &:focus {
@@ -33,5 +39,25 @@
         cursor: pointer;
       }
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfoleo-filters-list {
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 612px;
+  }
+
+  .portfoleo-filters-list-item {
+    margin-right: 8px;
+    margin-bottom: 0px;
+  }
+  .portfoleo-filters-list-item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfoleo-filters-list {
+    margin-bottom: 0;
   }
 }
