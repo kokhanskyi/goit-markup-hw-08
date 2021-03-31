@@ -13,7 +13,7 @@
 .regular-client-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .regular-client-item {
   padding-bottom: 30px;
@@ -40,6 +40,9 @@
   }
 }
 @media screen and (min-width: 480px) {
+  .regular-client-list {
+    justify-content: space-between;
+  }
   .regular-client-item:nth-last-child(-n + 2) {
     padding: 0;
   }
