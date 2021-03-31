@@ -600,9 +600,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .portfoleo-project-wapper {
-    height: 146px;
-  }
   .container .portfoleo-project-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -619,6 +616,12 @@ header {
   }
   .portfoleo-project-list-text {
     padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container .portfoleo-project-list-item:nth-child(-n + 2) .portfoleo-project-wapper {
+    height: 146px;
   }
 }
 
